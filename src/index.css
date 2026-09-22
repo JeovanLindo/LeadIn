@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  /* Tons de verdes */
+  --color-verde-escuro: #318c30;
+  --color-verde-principal: #2bb32b;
+
+  /* Tons de cianos */
+  --color-ciano-claro: #22e37d;
+  --color-ciano-escuro: #28c89e;
+  
+  /* Tons de azuis */
+  --color-azul: #19387c;
+  --color-azul-escuro: #122d66;
+  
+  /* Tons neutros (claro e escuro) */
+  --color-escuro-principal: #020618;
+  --color-escuro: #0f172b;
+  --color-claro-principal: #f1f5f9;
+  --color-claro: #f8fafc;
+}
