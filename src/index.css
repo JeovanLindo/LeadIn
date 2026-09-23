@@ -1,13 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:wght@100..900&display=swap');
+
 @import "tailwindcss";
 
 @theme {
+/* Fonte para Títulos */
+  --font-display: "Bricolage Grotesque", sans-serif;
+  
+  /* Fonte padrão para Parágrafos e textos gerais */
+  --font-sans: "Inter", sans-serif;
+
+
   /* Tons de verdes */
-  --color-verde-escuro: #318c30;
-  --color-verde-principal: #2bb32b;
+  --color-verde-escuro: #005b47;
+  --color-verde-principal: #00a884;
 
   /* Tons de cianos */
-  --color-ciano-claro: #22e37d;
-  --color-ciano-escuro: #28c89e;
+  --color-ciano-claro: #00f4c0;
+  --color-ciano-escuro: #005b47;
   
   /* Tons de azuis */
   --color-azul: #19387c;
@@ -18,4 +27,21 @@
   --color-escuro: #0f172b;
   --color-claro-principal: #f1f5f9;
   --color-claro: #f8fafc;
+}
+
+@layer base {
+  /* Aplica a Inter no corpo do site inteiro por padrão */
+  html, body {
+    font-family: var(--font-sans);
+    font-optical-sizing: auto;
+    background-color: var(--color-brand-escuro); /* Opcional: já define o fundo */
+    color: var(--color-brand-claro);
+  }
+
+  /* Aplica a Bricolage Grotesque automaticamente em todos os Títulos */
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    font-variation-settings: "wdth" 100;
+  }
 }

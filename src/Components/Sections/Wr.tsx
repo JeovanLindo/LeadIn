@@ -475,9 +475,9 @@ export default function WR() {
               leading-[0.94]
               tracking-[-0.055em]
 
-              sm:text-5xl
+               sm:text-4xl
 
-              lg:text-[70px]
+              lg:text-5xl
             "
           >
             Você não recebe

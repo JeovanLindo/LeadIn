@@ -1156,15 +1156,14 @@ export default function Product() {
           <h2
             className="
               mt-5
-              text-4xl
               font-black
               leading-[0.94]
               tracking-[-0.055em]
               text-escuro-principal
 
-              sm:text-5xl
+              sm:text-4xl
 
-              lg:text-[72px]
+              lg:text-5xl
             "
           >
             Conversas deixam de
@@ -1172,9 +1171,11 @@ export default function Product() {
 
             <span
               className="
-                mt-2
                 block
                 text-verde-principal
+                 sm:text-4xl
+
+              lg:text-5xl
               "
             >
               Viram prioridades.

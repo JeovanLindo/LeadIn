@@ -252,8 +252,8 @@ export default function Features() {
               font-black
               leading-[0.95]
               tracking-[-0.055em]
-              sm:text-5xl
-              lg:text-[70px]
+              sm:text-4xl
+              lg:text-5xl
             "
           >
             Não é só sobre responder rápido.

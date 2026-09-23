@@ -323,8 +323,9 @@ export default function Problem() {
               font-black
               leading-[0.95]
               tracking-[-0.05em]
-              sm:text-5xl
-              lg:text-[56px]
+               sm:text-4xl
+
+              lg:text-5xl
             "
           >
             24 horas
@@ -335,6 +336,9 @@ export default function Problem() {
                 mt-2
                 block
                 text-ciano-claro
+                 sm:text-4xl
+
+              lg:text-5xl
               "
             >
               Até várias conversas

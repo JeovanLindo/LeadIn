@@ -4,6 +4,8 @@ import {
   journeySections,
   useJourney,
 } from "../../context/JourneyContext";
+import Icon from "../../assets/Verde-com-fundo-branco.svg";
+import wricon from "../../assets/Nome-COLORIDO.png"
 
 const WHATSAPP_URL = "https://wa.me/552231991580?text=Ol%C3%A1!%20Vi%20a%20p%C3%A1gina%20do%20LeadIn%20e%20quero%20falar%20com%20um%20especialista.";
 
@@ -30,8 +32,9 @@ export default function TimelineHeader() {
         right-0
         z-50
         border-b
-        border-escuro-principal/[0.06]
-        bg-claro/90
+        border-escuro-principal/10
+        bg-white/90
+        shadow-sm
         backdrop-blur-xl
         transition-all
         duration-300
@@ -56,12 +59,12 @@ export default function TimelineHeader() {
           onClick={() => handleSelectSection(0)}
           className="flex cursor-pointer items-center gap-2 shrink-0"
         >
-          <div className="flex h-7 w-7 items-center justify-center rounded-lg bg-verde-principal font-black text-escuro-principal shadow-sm text-xs">
-            L
-          </div>
-          <span className="font-bold tracking-tight text-escuro-principal text-sm sm:text-base">
+          <img src={Icon} alt="LeadIn" className="h-8 w-8" />
+          <h1 className="font-bold tracking-tight text-escuro-principal text-sm sm:text-base">
             LeadIn
-          </span>
+          </h1>
+          <span className="font-bold text-escuro-principal">+</span>
+          <img src={wricon} alt="WR" className="h-6 w-full object-contain" />
         </div>
 
         {/* TIMELINE HORIZONTAL (APENAS DESKTOP) */}
@@ -111,7 +114,7 @@ export default function TimelineHeader() {
                     ${
                       active
                         ? "font-bold text-escuro-principal"
-                        : "text-escuro-principal/40 group-hover:text-escuro-principal/80"
+                        : "text-escuro-principal/50 group-hover:text-escuro-principal/80"
                     }
                   `}
                 >
@@ -128,7 +131,7 @@ export default function TimelineHeader() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex rounded-full bg-escuro-principal px-4 py-1.5 text-xs font-bold text-white transition-all duration-300 hover:bg-verde-principal hover:text-escuro-principal"
+            className="hidden sm:inline-flex rounded-full bg-escuro-principal px-4 py-1.5 text-xs font-bold text-white transition-all duration-300 hover:bg-verde-principal hover:text-escuro-principal hover:shadow-[0_4px_15px_rgba(34,197,94,0.3)]"
           >
             Falar com especialista
           </a>
@@ -137,7 +140,7 @@ export default function TimelineHeader() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden flex h-9 w-9 items-center justify-center rounded-xl bg-escuro-principal/5 text-escuro-principal"
+            className="md:hidden flex h-9 w-9 items-center justify-center rounded-xl bg-escuro-principal/5 text-escuro-principal border border-escuro-principal/10 transition-colors hover:bg-escuro-principal/10"
             aria-label="Menu"
           >
             {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
@@ -147,7 +150,7 @@ export default function TimelineHeader() {
 
       {/* MENU DROPDOWN MOBILE */}
       {mobileMenuOpen && (
-        <div className="absolute top-full left-0 w-full border-b border-escuro-principal/10 bg-claro/95 px-6 py-5 shadow-xl backdrop-blur-2xl md:hidden animate-in fade-in slide-in-from-top-2 duration-200">
+        <div className="absolute top-full left-0 w-full border-b border-escuro-principal/10 bg-white/95 px-6 py-5 shadow-xl backdrop-blur-2xl md:hidden animate-in fade-in slide-in-from-top-2 duration-200">
           <nav className="flex flex-col space-y-3">
             {journeySections.map((section, index) => {
               const active = activeSection === index;
@@ -157,10 +160,10 @@ export default function TimelineHeader() {
                   key={section.id}
                   type="button"
                   onClick={() => handleSelectSection(index)}
-                  className={`flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-medium transition-colors ${
+                  className={`flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-medium transition-all ${
                     active
-                      ? "bg-verde-principal/10 font-bold text-verde-escuro"
-                      : "text-escuro-principal/70 hover:bg-escuro-principal/5"
+                      ? "bg-verde-principal/15 font-bold text-verde-escuro border border-verde-principal/20"
+                      : "text-escuro-principal/70 hover:bg-escuro-principal/5 border border-transparent"
                   }`}
                 >
                   <span>{section.label}</span>

@@ -6,12 +6,14 @@ import Product from "./Components/Sections/Product";
 import TimelineHeader from "./Components/Sections/TimeLineHeader";
 import WR from "./Components/Sections/Wr";
 import ScrollClock from "./Components/ui/ScrollClock";
+import WhatsAppHibrido from "./Components/ui/WhatsAppHibrido";
 import { JourneyProvider } from "./context/JourneyContext";
 
 function App() {
   return (
     <JourneyProvider>
       <ScrollClock />
+      <WhatsAppHibrido />
 
       <header>
         <TimelineHeader />
