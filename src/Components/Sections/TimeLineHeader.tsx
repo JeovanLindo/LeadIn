@@ -7,7 +7,7 @@ import {
 import Icon from "../../assets/Verde-com-fundo-branco.svg";
 import wricon from "../../assets/Nome-COLORIDO.png"
 
-const WHATSAPP_URL = "https://wa.me/552231991580?text=Ol%C3%A1!%20Vi%20a%20p%C3%A1gina%20do%20LeadIn%20e%20quero%20falar%20com%20um%20especialista.";
+const WHATSAPP_URL = "https://wa.me/5521995261742?text=Ol%C3%A1!%20Vi%20a%20p%C3%A1gina%20do%20LeadIn%20e%20quero%20falar%20com%20um%20especialista.";
 
 export default function TimelineHeader() {
   const {

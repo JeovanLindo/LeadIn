@@ -301,9 +301,9 @@ export default function Hero() {
                 </div>
 
                 <TypewriterTitle 
-                  text1="Toda conversa tem "
-                  highlight="24 horas"
-                  text2=". Depois disso, você paga para falar."
+                  text1=''
+                  highlight="24 horas:"
+                  text2=" a linha exata que separa um atendimento lucrativo de uma cobrança invisível na sua conta."
                   highlightClass="text-ciano-claro underline decoration-verde-principal decoration-4"
                   cursorColor="bg-ciano-claro"
                 />

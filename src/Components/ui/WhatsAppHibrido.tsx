@@ -8,14 +8,14 @@ export default function WhatsAppHibrido() {
   const handleOpenWhatsApp = (tipo: "leadin" | "wr") => {
     let mensagem = "";
     if (tipo === "leadin") {
-      mensagem = "Olá! Vi a página do LeadIn e quero ver o sistema funcionando e entender os planos.";
+      mensagem = "Olá! Vi a página do LeadIn, quero ver o sistema funcionando e entender os planos.";
     } else {
-      mensagem = "Olá! Vim pela página da WR Digital e preciso de ajuda com tráfego pago, implantação ou estrutura.";
+      mensagem = "Olá! Vim pela página da WR Digital, preciso de ajuda com tráfego pago, implantação ou estrutura.";
     }
     const encoded = encodeURIComponent(mensagem);
     
     setTimeout(() => {
-      window.open(`https://wa.me/552231991580?text=${encoded}`, "_blank");
+      window.open(`https://wa.me/5521995261742?text=${encoded}`, "_blank");
       setIsOpen(false);
       setEtapa("menu");
     }, 4200);

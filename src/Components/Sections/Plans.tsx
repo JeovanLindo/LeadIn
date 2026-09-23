@@ -25,7 +25,7 @@ const plans = [
       "Alerta de lead abandonado",
     ],
     cta: "Começar no Básico",
-    url: "https://wa.me/552231991580?text=Quero%20o%20LeadIn%20B%C3%A1sico",
+    url: "https://wa.me/5521995261742?text=Quero%20o%20LeadIn%20B%C3%A1sico",
     featured: false,
   },
   {
@@ -42,7 +42,7 @@ const plans = [
       "Reativação da base parada",
     ],
     cta: "Falar sobre o Pro",
-    url: "https://wa.me/552231991580?text=Quero%20o%20LeadIn%20Pro",
+    url: "https://wa.me/5521995261742?text=Quero%20o%20LeadIn%20Pro",
     featured: true,
   },
   {
@@ -58,7 +58,7 @@ const plans = [
       "Suporte prioritário",
     ],
     cta: "Conversar sobre Enterprise",
-    url: "https://wa.me/552231991580?text=Quero%20o%20LeadIn%20Enterprise",
+    url: "https://wa.me/5521995261742?text=Quero%20o%20LeadIn%20Enterprise",
     featured: false,
   },
 ];
@@ -523,7 +523,7 @@ export default function Plans() {
           </p>
           
           <a
-            href="https://wa.me/552231991580?text=Ol%C3%A1%21%20Gostaria%20de%20uma%20avalia%C3%A7%C3%A3o%20para%20escolher%20o%20melhor%20plano."
+            href="https://wa.me/5521995261742?text=Ol%C3%A1%21%20Gostaria%20de%20uma%20avalia%C3%A7%C3%A3o%20para%20escolher%20o%20melhor%20plano."
             target="_blank"
             rel="noopener noreferrer"
             className="
