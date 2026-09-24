@@ -5,7 +5,7 @@ import {
   useJourney,
 } from "../../context/JourneyContext";
 import Icon from "../../assets/Verde-com-fundo-branco.svg";
-import wricon from "../../assets/Nome-COLORIDO.png"
+import wricon from "../../assets/Logo-WR.png"
 
 const WHATSAPP_URL = "https://wa.me/5521995261742?text=Ol%C3%A1!%20Vi%20a%20p%C3%A1gina%20do%20LeadIn%20e%20quero%20falar%20com%20um%20especialista.";
 
@@ -32,9 +32,9 @@ export default function TimelineHeader() {
         right-0
         z-50
         border-b
-        border-escuro-principal/10
-        bg-white/90
-        shadow-sm
+        border-white/10
+        bg-[#020618]/90
+        shadow-lg
         backdrop-blur-xl
         transition-all
         duration-300
@@ -60,11 +60,11 @@ export default function TimelineHeader() {
           className="flex cursor-pointer items-center gap-2 shrink-0"
         >
           <img src={Icon} alt="LeadIn" className="h-8 w-8" />
-          <h1 className="font-bold tracking-tight text-escuro-principal text-sm sm:text-base">
+          <h1 className="font-bold tracking-tight text-white text-sm sm:text-base">
             LeadIn
           </h1>
-          <span className="font-bold text-escuro-principal">+</span>
-          <img src={wricon} alt="WR" className="h-6 w-full object-contain" />
+          <span className="font-bold text-verde-principal">+</span>
+          <img src={wricon} alt="WR" className="h-10 w-full object-contain filter brightness-200" />
         </div>
 
         {/* TIMELINE HORIZONTAL (APENAS DESKTOP) */}
@@ -97,10 +97,10 @@ export default function TimelineHeader() {
                     duration-500
                     ${
                       active
-                        ? "h-2 w-6 bg-verde-principal shadow-[0_0_8px_rgba(34,197,94,0.4)]"
+                        ? "h-2 w-6 bg-verde-principal shadow-[0_0_12px_rgba(34,197,94,0.6)]"
                         : past
-                          ? "h-2 w-2 bg-escuro-principal/40 group-hover:bg-escuro-principal/70"
-                          : "h-2 w-2 bg-escuro-principal/15 group-hover:bg-escuro-principal/40"
+                          ? "h-2 w-2 bg-white/40 group-hover:bg-white/70"
+                          : "h-2 w-2 bg-white/15 group-hover:bg-white/40"
                     }
                   `}
                 />
@@ -113,8 +113,8 @@ export default function TimelineHeader() {
                     duration-300
                     ${
                       active
-                        ? "font-bold text-escuro-principal"
-                        : "text-escuro-principal/50 group-hover:text-escuro-principal/80"
+                        ? "font-bold text-white"
+                        : "text-white/50 group-hover:text-white/80"
                     }
                   `}
                 >
@@ -131,7 +131,7 @@ export default function TimelineHeader() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden sm:inline-flex rounded-full bg-escuro-principal px-4 py-1.5 text-xs font-bold text-white transition-all duration-300 hover:bg-verde-principal hover:text-escuro-principal hover:shadow-[0_4px_15px_rgba(34,197,94,0.3)]"
+            className="hidden sm:inline-flex rounded-full bg-ciano-claro px-4 py-1.5 text-xs font-bold text-escuro-principal transition-all duration-300 hover:bg-white hover:shadow-[0_4px_20px_rgba(0,244,192,0.3)]"
           >
             Falar com especialista
           </a>
@@ -140,7 +140,7 @@ export default function TimelineHeader() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden flex h-9 w-9 items-center justify-center rounded-xl bg-escuro-principal/5 text-escuro-principal border border-escuro-principal/10 transition-colors hover:bg-escuro-principal/10"
+            className="md:hidden flex h-9 w-9 items-center justify-center rounded-xl bg-white/5 text-white border border-white/10 transition-colors hover:bg-white/10 cursor-pointer"
             aria-label="Menu"
           >
             {mobileMenuOpen ? <X size={18} /> : <Menu size={18} />}
@@ -150,7 +150,7 @@ export default function TimelineHeader() {
 
       {/* MENU DROPDOWN MOBILE */}
       {mobileMenuOpen && (
-        <div className="absolute top-full left-0 w-full border-b border-escuro-principal/10 bg-white/95 px-6 py-5 shadow-xl backdrop-blur-2xl md:hidden animate-in fade-in slide-in-from-top-2 duration-200">
+        <div className="absolute top-full left-0 w-full border-b border-white/10 bg-[#020618]/95 px-6 py-5 shadow-2xl backdrop-blur-2xl md:hidden animate-in fade-in slide-in-from-top-2 duration-200">
           <nav className="flex flex-col space-y-3">
             {journeySections.map((section, index) => {
               const active = activeSection === index;
@@ -162,8 +162,8 @@ export default function TimelineHeader() {
                   onClick={() => handleSelectSection(index)}
                   className={`flex items-center justify-between rounded-xl px-4 py-2.5 text-sm font-medium transition-all ${
                     active
-                      ? "bg-verde-principal/15 font-bold text-verde-escuro border border-verde-principal/20"
-                      : "text-escuro-principal/70 hover:bg-escuro-principal/5 border border-transparent"
+                      ? "bg-verde-principal/20 font-bold text-ciano-claro border border-verde-principal/30"
+                      : "text-white/70 hover:bg-white/5 border border-transparent"
                   }`}
                 >
                   <span>{section.label}</span>
@@ -176,7 +176,7 @@ export default function TimelineHeader() {
       )}
 
       {/* BARRA DE PROGRESSO GLOBAL SUTIL NO TOPO DO HEADER */}
-      <div className="absolute bottom-0 left-0 h-[2px] w-full bg-escuro-principal/[0.03]">
+      <div className="absolute bottom-0 left-0 h-[2px] w-full bg-white/10">
         <div
           className="h-full bg-verde-principal transition-all duration-150"
           style={{ width: `${progress * 100}%` }}

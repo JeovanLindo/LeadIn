@@ -14,7 +14,7 @@ import {
 const plans = [
   {
     name: "Básico",
-    promise: "O sistema avisa quando algo precisa da sua atenção.",
+    promise: "Para organizar o WhatsApp da operação.",
     price: "297",
     limit: "Até 5 atendentes · 1 número",
     features: [
@@ -30,9 +30,9 @@ const plans = [
   },
   {
     name: "Pro",
-    promise: "O sistema explica o porquê e sugere o próximo passo.",
+    promise: "Para transformar atendimento em operação de vendas.",
     price: "697",
-    limit: "Até 10 atendentes · 3 números",
+    limit: "Até 10 atendentes · 3 números · IA e inteligência comercial.",
     features: [
       "Tudo do Básico",
       "Copiloto sugerindo resposta",
@@ -47,11 +47,12 @@ const plans = [
   },
   {
     name: "Enterprise",
-    promise: "O sistema conversa com o resto da sua empresa.",
-    price: "1.497",
+    promise: "Para operações que precisam integrar o LeadIn ao restante da empresa.",
+    price: "1.997",
     limit: "Atendentes e canais conforme contrato",
     features: [
       "Tudo do Pro",
+      "Limites conforme operação",
       "Integração com ERP",
       "API e webhooks liberados",
       "Automações sob medida",
