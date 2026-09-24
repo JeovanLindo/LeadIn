@@ -55,7 +55,7 @@ const plans = [
       "Limites conforme operação",
       "Integração com ERP",
       "API e webhooks liberados",
-      "Automações sob medida",
+      "Fluxos personalizados e integrações sob escopo",
       "Suporte prioritário",
     ],
     cta: "Conversar sobre Enterprise",
