@@ -48,7 +48,7 @@ const plans = [
   {
     name: "Enterprise",
     promise: "Para operações que precisam integrar o LeadIn ao restante da empresa.",
-    price: "1.997",
+    price: "1.497",
     limit: "Atendentes e canais conforme contrato",
     features: [
       "Tudo do Pro",
